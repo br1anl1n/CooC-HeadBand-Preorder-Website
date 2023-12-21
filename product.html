@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Product  
+{% endblock %}
+
+{% block main %}
+<!-- Header for the page using different css properties-->
+<center>
+  <h1 style="font-size: 50px; font-family: Verdana">Our Product</h1>
+  <p style="font-family: Verdana; font-size: 25px">CooC Features 2 generations of products:</p>
+<center>
+
+<!--Implemented carosel from bootstrap give users options to choose from our product-->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <!--Captions/descriptions are within the pictures for friendly user experience on our site-->
+  <!--This displays the first Generation of the product and it's description-->
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static/Product1.jpg" class="d-block w-50" alt="Product1">
+      <div class="carousel-caption d-none d-md-block"></div>
+      <p style="font-size: 20px; padding-top: 15px" >CooC Headband: Generation 1</p>
+      <p style="font-size: 15px; padding-top: 20px">Personalized technology to fit your need.
+      Visualize your progress anywhere anytime.
+      Make it fit you.
+      Fast Charging.</p>
+    </div>
+
+    <!--This displays the S Generation of the product and it's description-->
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/Product2.jpg" class="d-block w-50" alt="Product2">
+      <div class="carousel-caption d-none d-md-block"></div>
+      <p style="font-size: 20px; padding-top: 15px">Powerful, Precise, Medical-grade EEG.</p>
+      <p style="font-size: 15px; padding-top: 20px">Medical-grade precision to accurately track your progress.
+      Completely water-proof.
+      4 hours continuous usage.
+      Fitting for all age groups.</p>
+    </div>
+  </div>
+  <!--Indicator for the amount of pictures there are in the carosel-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock %}

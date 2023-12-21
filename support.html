@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<!-- Implemented accordian from Boostrap and used css features to make it more user friendly.-->
+<div class="accordion" id="accordionPanelsStayOpenExample" style="padding-top: 100px; 
+padding-left: 100px; padding-right: 100px;">
+    <h2 style="background-color: black; color: white">
+        <strong>
+            FAQ
+        </strong>
+    </h2>
+    <!--First accordian explaining the first FAQ-->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          What does the CooC Headband aim to do?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <strong>To help you visualize your meditation progress and thereby making your meditation progress easier and more productive.</strong> CooC's headband combines the power of EGG machines and Machine Learnng algorithm to track, detect, and transcribe the electrical signal of brain active. It can be used to measure the effectiveness of meditation. CooC's headband can not only let users visualize their progress but also allow them to act on the feedback and get to the state of mindfulness quicker. 
+        </div>
+      </div>
+    </div>
+
+    <!--Second accordian explaining the first FAQ-->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          What can CooC do better than its competitors?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <strong>Better and Cheaper</strong> CooC's Headbands are significantly more affordable than most competitors on the market. Designed with integrated technology and research data from more than 10,000 data points, CooC's detection algorithm is also signifantly more accurate than that of its competitors. 
+        </div>
+      </div>
+    </div>
+    <!--Third accordian explaining the first FAQ-->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          How does the pre-order work?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body">
+          <strong>Be the first to get the product when the product releases and get a discouted price.</strong> Pre-order our product now with a discounted and we will deliver it to your address by May 2023.
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
